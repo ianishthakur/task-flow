@@ -79,17 +79,20 @@ lib/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/yourusername/taskflow_premium.git
-cd taskflow_premium
+git clone https://github.com/ianishthakur/task-flow.git
+cd task-flow
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```bash
 flutter pub get
 ```
 
-3. Run the app:
+1. Run the app:
+
 ```bash
 flutter run
 ```
@@ -173,9 +176,33 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Your Name - [@ianishthakur](https://twitter.com/ianishthakur)
 
-Project Link: [https://github.com/yourusername/taskflow_premium](https://github.com/yourusername/taskflow_premium)
+Project Link: [https://github.com/ianishthakur/task-flow](https://github.com/ianishthakur/task-flow)
+
+This project is configured for a multi-account SSH setup.
+
+## 🚀 Quick Start for Work Account
+
+If you are seeing the error `src refspec main does not match any` or permission denied, run these commands in order:
+
+### 1. Fix Remote URL
+
+Use the `github.com-work` alias from your `.ssh/config`:
+
+```bash
+git remote set-url origin git@github.com-work:yourusername/task-flow.git
+```
+
+This repository is configured to use a specific Work SSH profile.
+
+## Troubleshooting SSH
+
+To test if your SSH config for the work account is actually working, run:
+
+```bash
+ssh -T git@github.com-work
+```
 
 ---
 
