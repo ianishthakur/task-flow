@@ -1,0 +1,62 @@
+name: taskflow_app
+description: A premium task management app with clean architecture
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.8
+
+  # Local Storage
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  shared_preferences: ^2.5.4
+
+  # Dependency Injection
+  get_it: ^9.2.0
+  injectable: ^2.7.1+4
+
+  # Functional Programming
+  dartz: ^0.10.1
+
+  # UI Enhancements
+  flutter_animate: ^4.5.2
+  google_fonts: ^6.3.3
+  iconsax: ^0.0.8
+  flutter_svg: ^2.2.3
+  shimmer: ^3.0.0
+
+  # Utils
+  uuid: ^4.5.2
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.10.4
+  injectable_generator: ^2.12.0
+
+flutter:
+  uses-material-design: true
+
+  # fonts:
+  #   - family: Satoshi
+  #     fonts:
+  #       - asset: assets/fonts/Satoshi-Regular.ttf
+  #       - asset: assets/fonts/Satoshi-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Satoshi-Bold.ttf
+  #         weight: 700
+
